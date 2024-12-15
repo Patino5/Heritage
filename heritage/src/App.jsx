@@ -26,6 +26,11 @@ function App() {
       </header>
       <main>
         <Hero />
+        <About />
+        <Services/>
+        <Portfolio />
+        <Contact />
+        
       </main>
       <footer>
         <p>This website is a copy of <a href="heritagelandscapestx.com">heritage landscapes</a> website for practice for R.Patino</p>

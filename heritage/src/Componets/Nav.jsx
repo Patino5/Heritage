@@ -2,7 +2,13 @@ function Nav() {
 
     return (
         <>
-            <h2>Text Nav Component</h2>
+            <ul >
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Services</li>
+                <li>Portfolio</li>
+                <li>Contact Us</li>
+            </ul>
         </>
     )
     
