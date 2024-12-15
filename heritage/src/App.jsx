@@ -1,33 +1,25 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import heritageLogo from './assets/heritageLogo.avif'
 import './App.css'
+import FirstComponet from './Componets/FirstComponet'
+import Nav from './Componets/Nav'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+      <header>
+        <a href="https://heritagelandscapestx.com">
+          <img src={heritageLogo}  alt="Heritage logo" />
         </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+        <nav>
+          <Nav />
+        </nav>
+      </header>
+        <FirstComponet />
     </>
   )
 }
